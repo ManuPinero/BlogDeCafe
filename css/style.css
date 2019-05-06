@@ -16,6 +16,7 @@ html {
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
+    width: 95%
 }
 
 h1, h2, h3, h4{ font-family: "PT Sans", sans-serif}
@@ -116,3 +117,31 @@ img {
     }
 }
 
+/**Contenido Principal Home**/
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog, .curso{
+    flex: 0 0 100%;
+}
+
+.cursos{
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .contenido{
+        justify-content: space-between;
+    }
+
+    .blog{
+        flex-basis: 66.6%;
+        order: -1;
+    }
+
+    .cursos{
+        flex-basis: calc(33.3% - 4rem);
+    }
+}
