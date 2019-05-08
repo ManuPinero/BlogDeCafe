@@ -71,6 +71,9 @@ img {
     .columnas-8{
         flex: 0 0 calc(66% - 2rem);
     }
+    .columnas-12{
+        flex: 0 0 100%;
+    }
 }
 
 /** Botones **/
